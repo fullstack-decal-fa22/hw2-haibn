@@ -32,10 +32,11 @@ h2 {
 }
 
 .threevert {
+  height: calc(100% / 3);
 }
 
 .threehoriz {
-  width: 33.3%;
+  width: calc(100% / 3);
 }
 
 .narrow {
@@ -55,9 +56,31 @@ h2 {
   top: 50px;
 }
 
+/* Poland */
+
+.white.twovert {
+  background-color: white;
+}
+
+.red.twovert {
+  background-color: red;
+}
+
 /* Colors */
 
 /* QUESTION 1 */
+
+.red.threevert {
+  background-color: red;
+}
+
+#white {
+  background-color: white;
+}
+
+.light-blue.threevert {
+  background-color: lightblue;
+}
 
 .orange {
   background-color: orange;
@@ -75,7 +98,7 @@ h2 {
   background-color: blue;
 }
 
-.lightblue {
+.lightblue.threevert {
   background-color: lightblue;
 }
 
@@ -95,45 +118,89 @@ h2 {
 
 .thailand-red {
   /* TODO */
+  height: calc(100% / 6);
+  background-color: #B5002D;
 }
 
 .thailand-white {
   /* TODO */
+  height: calc(100% / 6);
+  background-color: white;
 }
 
 .thailand-blue {
   /* TODO */
+  height: calc(100% / 3);
+  background-color: #2E2A4C;
 }
 
 /* END QUESTION 2 */
 
 /* BEGIN QUESTION 3 */
 
-.romania-blue {
+.romania-blue.threehoriz {
   background-color: #002c84;
 }
 
-.romania-yellow {
+.romania-yellow.threehoriz {
   background-color: #ffcf00;
 }
 
-.romania-red {
+.romania-red.threehoriz {
   background-color: #e10017;
 }
 
 /* END QUESTION 3 */
 
 /* QUESTION 4 */
-.mexico-green {
+.mexico-green.threehoriz {
   background-color: #006341;
 }
 
-.mexico-img {
-  /* TODO */
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.mexico-red {
+.eagle{
+  max-height: 80%;
+  max-width: 80%;
+}
+
+.mexico-red.threehoriz {
   background-color: #ce1126;
+}
+
+/* QUESTION 5 */
+.label {
+  color: brown;
+  transition: font-size 1s ease-out 100ms, color 1s ease-out 100ms;
+}
+
+.label.po:hover {
+  color: #e10017;
+  font-size: 20px;
+}
+
+.label.lux:hover {
+  color: blueviolet;
+  font-size: 20px;
+}
+
+.label.thai:hover {
+  color: blue;
+  font-size: 20px;
+}
+
+.label.rom:hover {
+  color: orange;
+  font-size: 20px;
+}
+
+.label.mex:hover {
+  color: green;
+  font-size: 20px;
 }
 
 /* QUESTION 6 */
@@ -147,14 +214,16 @@ h2 {
 }
 
 /* For margin practice */
-.flag1 {
+.margin-container .flag:first-child {
   background-color: red;
   /* TODO */
+  margin-right: 5px;
 }
 
-.flag2 {
+.margin-container .flag:last-child {
   background-color: blue;
   /* TODO */
+  margin-left: 5px;
 }
 /* For padding practice */
 .padding-container {
@@ -162,4 +231,5 @@ h2 {
   background-color: lightblue;
   background-clip: content-box, padding-box;
   /* TODO */
+  padding: 60px;
 }
