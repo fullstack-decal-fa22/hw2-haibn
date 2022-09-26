@@ -58,19 +58,19 @@ h2 {
 
 /* Poland */
 
-.white.twovert {
+/* .white.twovert {
   background-color: white;
 }
 
 .red.twovert {
   background-color: red;
-}
+} */
 
 /* Colors */
 
 /* QUESTION 1 */
 
-.red.threevert {
+.red {
   background-color: red;
 }
 
@@ -78,7 +78,7 @@ h2 {
   background-color: white;
 }
 
-.light-blue.threevert {
+.light-blue {
   background-color: lightblue;
 }
 
@@ -98,7 +98,7 @@ h2 {
   background-color: blue;
 }
 
-.lightblue.threevert {
+.lightblue {
   background-color: lightblue;
 }
 
@@ -159,7 +159,7 @@ h2 {
 
 .image {
   display: flex;
-  align-items: center;
+  align-self: center;
   justify-content: center;
 }
 
